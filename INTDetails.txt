@@ -22,10 +22,17 @@ https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fr
 
 https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=136ffa66-efaa-47d9-8861-11079bb25a53
 
+There are three levels of Visibility calls.
 
-https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2015-05-28%2010:10:10.10&toDateTime=2018-06-27%2010:10:10.10
+Get Rootworkflow by some query parameter:  
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2015-05-28%2010:10:10.10&toDateTime=2018-06-27%2010:10:10.10  
+
+Get workflows with a given root workflow ID (rootworkflowID as query parameter)
 
 https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+
+Get details of a workflow:  Workflow ID as resource. 
 
 https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
 
