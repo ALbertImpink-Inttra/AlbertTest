@@ -1,0 +1,36 @@
+inttra-dev-inbound-pickup is the inbound queue
+inttra-int-outbound-delivery is the outbound s3
+inttra_int_sqs_subscription_errors
+
+******************** Visibility **********************************
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2015-05-28%2010:10:10.10&toDateTime=2018-06-27%2010:10:10.10
+
+
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+-- inboundFilename
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?inboundFileName=DemoIFTSTA_AI2.txt
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?Format=IFTSTA
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2017-06-21%0110:10:10.10&toDateTime=2017-06-21%2310:10:10.10
+
+-- 136ffa66-efaa-47d9-8861-11079bb25a53
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=136ffa66-efaa-47d9-8861-11079bb25a53
+
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2015-05-28%2010:10:10.10&toDateTime=2018-06-27%2010:10:10.10
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+
+****************** Geography *************************
+
+https://mercury-api.alpha.inttra.com/network/reference/geography/DEHAM
+
+-- USMGC

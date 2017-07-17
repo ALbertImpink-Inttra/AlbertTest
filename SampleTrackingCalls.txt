@@ -1,0 +1,153 @@
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/rootworkflow?fromDateTime=2015-05-28%2010:10:10.10&toDateTime=2018-06-27%2010:10:10.10
+
+{
+	"rootWorkflows": [{
+		"rootWorkflowId": "5b77a85d-9a2c-464b-ad97-70c4fd78d5d4",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 14:45:34.91"
+	}, {
+		"rootWorkflowId": "24ce5895-c13a-4a55-82fd-215f9f36e4b5",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 14:40:27.69"
+	}, {
+		"rootWorkflowId": "6f2295b7-b861-4e48-bd14-7d706956f281",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 14:10:56.48"
+	}, {
+		"rootWorkflowId": "14a95f8f-6cb5-438c-82ac-6133e0ce6a7e",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 12:33:28.56"
+	}, {
+		"rootWorkflowId": "0c39ec88-e9f3-49b4-9f86-bb977809a9c6",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 12:04:31.31"
+	}, {
+		"rootWorkflowId": "0dc1429c-1840-4533-99d5-9475921a750a",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-21 11:28:50.32"
+	}, {
+		"rootWorkflowId": "9ae82d8b-2849-467a-ae37-b42d7dde7bdd",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-20 22:22:49.96"
+	}, {
+		"rootWorkflowId": "629edf1b-8ec8-43aa-af7b-28fddac8db59",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-19 18:18:46.36"
+	}, {
+		"rootWorkflowId": "91c66aca-16fc-465e-8579-8e2ec3c840f5",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-16 21:45:52.31"
+	}, {
+		"rootWorkflowId": "8c79bc5c-6bf5-4bec-bc26-1f9b6a480c20",
+		"integrationProfileName": "TEST- CA2000",
+		"startTimestamp": "2017-06-16 18:43:45.88"
+	}]
+}
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow?rootWorkflowId=14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+
+{
+	"workflowIds": [{
+		"workflowId": "14a95f8f-6cb5-438c-82ac-6133e0ce6a7e",
+		"parentWorkflowId": "14a95f8f-6cb5-438c-82ac-6133e0ce6a7e",
+		"direction": "inbound",
+		"startTimestamp": "2017-06-21 12:33:28.56",
+		"pickupFileName": "DemoIFTSTA_2.txt"
+	}, {
+		"workflowId": "daa2a520-c38d-4e2f-ac9b-60f6706c72da",
+		"parentWorkflowId": "14a95f8f-6cb5-438c-82ac-6133e0ce6a7e",
+		"direction": "inbound",
+		"startTimestamp": "2017-06-21 12:33:30.67",
+		"format": "IFTSTA",
+		"context": "publishContainerEvent"
+	}, {
+		"workflowId": "65c61a53-8265-4e25-b691-08f236430928",
+		"parentWorkflowId": "daa2a520-c38d-4e2f-ac9b-60f6706c72da",
+		"direction": "outbound",
+		"startTimestamp": "2017-06-21 12:33:32.72",
+		"format": "315",
+		"context": "publishContainerEvent",
+		"outboundFileName": "CU2000/outbound/IFTSTA/CU20MftFtp_IFTSTA_20170621123334_0816732189.txt"
+	}]
+}
+
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/14a95f8f-6cb5-438c-82ac-6133e0ce6a7e
+
+{
+	"workflow": {
+		"workflowId": "14a95f8f-6cb5-438c-82ac-6133e0ce6a7e",
+		"startTimestamp": "2017-06-21 12:33:28.56",
+		"endTimestamp": "2017-06-21 12:33:30.72",
+		"components": [{
+			"name": "dispatcher",
+			"startTimestamp": "2017-06-21 12:33:28.38",
+			"endTimestamp": "2017-06-21 12:33:28.89",
+			"exitStatus": "success"
+		}, {
+			"name": "cerberus",
+			"startTimestamp": "2017-06-21 12:33:28.91",
+			"endTimestamp": "2017-06-21 12:33:29.18",
+			"exitStatus": "success"
+		}, {
+			"name": "splitter",
+			"startTimestamp": "2017-06-21 12:33:29.22",
+			"endTimestamp": "2017-06-21 12:33:30.75",
+			"exitStatus": "success"
+		}]
+	}
+}
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/65c61a53-8265-4e25-b691-08f236430928
+
+{
+	"workflow": {
+		"workflowId": "65c61a53-8265-4e25-b691-08f236430928",
+		"startTimestamp": "2017-06-21 12:33:32.72",
+		"endTimestamp": "2017-06-21 12:33:34.65",
+		"components": [{
+			"name": "intransformer",
+			"startTimestamp": "2017-06-21 12:33:32.95",
+			"endTimestamp": "2017-06-21 12:33:34.21",
+			"exitStatus": "success"
+		}, {
+			"name": "distributor",
+			"startTimestamp": "2017-06-21 12:33:34.24",
+			"endTimestamp": "2017-06-21 12:33:34.70",
+			"exitStatus": "success"
+		}]
+	}
+}
+
+-- daa2a520-c38d-4e2f-ac9b-60f6706c72da
+
+https://mercury-api.alpha.inttra.com/network/utility/tx-tracking/workflow/daa2a520-c38d-4e2f-ac9b-60f6706c72da
+
+{
+	"workflow": {
+		"workflowId": "daa2a520-c38d-4e2f-ac9b-60f6706c72da",
+		"startTimestamp": "2017-06-21 12:33:30.67",
+		"endTimestamp": "2017-06-21 12:33:32.91",
+		"components": [{
+			"name": "router",
+			"startTimestamp": "2017-06-21 12:33:30.70",
+			"endTimestamp": "2017-06-21 12:33:31.02",
+			"exitStatus": "success"
+		}, {
+			"name": "intransformer",
+			"startTimestamp": "2017-06-21 12:33:31.05",
+			"endTimestamp": "2017-06-21 12:33:31.49",
+			"exitStatus": "success"
+		}, {
+			"name": "validator",
+			"startTimestamp": "2017-06-21 12:33:31.54",
+			"endTimestamp": "2017-06-21 12:33:32.50",
+			"exitStatus": "success"
+		}, {
+			"name": "fulfiller",
+			"startTimestamp": "2017-06-21 12:33:32.53",
+			"endTimestamp": "2017-06-21 12:33:32.94",
+			"exitStatus": "success"
+		}]
+	}
+}
