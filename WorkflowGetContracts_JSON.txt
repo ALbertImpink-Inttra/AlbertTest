@@ -1,0 +1,59 @@
+
+------------------------------- /network/utility/event/rootWorkflow? GET Result ---------------
+May 25, 2017
+
+{"rootWorkflowIds":[{
+	"rootWorkflowId": "string",		-- GUID.  Identifier for Root Workflow.
+	"integrationProfileName": "string",	-- Name of the Integration Profile initiating the Root Work Flow.
+	"StartTimestamp": "string"		-- The start time stamp from the Start Workflow event for the Root Work Flow.
+	}]
+}	
+
+Query Paramters:  inboundFilename, integrationProfileName, ediId, interchangeControlNumber, format, context, fromDateTime, toDateTime (UTC)
+
+URL: /network/utility/event/rootWorkflow?
+
+------------------------------- /network/utility/event/workflow? GET Result ---------------
+May 25, 2017
+
+{"WorkflowIds":[{
+	"workflowId": "string",			-- GUID.  Identifier for Workflow.
+	"parentWorkflowId": "string",		-- GUID.  Identifier for Parent Workflow associated with Workflow.
+	"direction": "string",			-- Fixed value, one of Inbound, Outbound or Synchronous. Derived from workflow component name(s).
+	"StartTimestamp": "string",		-- The start time stamp from the Start Workflow event for the Work Flow.
+	"format": "string",			-- format associated with the workflow.
+	"context": "string"			-- context associated with the format.
+	}]
+}
+
+Query Paramters:  rootWorkflowId
+
+URL: /network/utility/event/workflow? 
+
+------------------------------- /network/utility/event/workflow/{iD} GET Result ---------------
+Revised:  June 9, 2017 
+
+URL: /network/utility/event/workflow? 
+
+{"Workflow":{
+	"workflowId": "string",			-- GUID.  Identifier for Workflow.
+	"StartTimestamp": "string",		-- The start time stamp from the Start Workflow event for the Work Flow.
+	"EndTimestamp": "string",		-- The end time stamp from the End Workflow event for the Work Flow.
+	"components":
+		[{
+		"Name": "string",		-- Component Name.
+		"startTimestamp": "string",	-- Start timestamp for the component run.	  				 		
+		"endTimestamp": "string",	-- End timestamp for the component run.	  				 				
+		"exitStatus": "string",		-- Exist status of the component. 
+		"exceptions": [			-- exceptions raised by the component
+			{
+			"type":"string",	-- exception type (warning, error)
+			"code":"string",	-- exception URN
+			"value": "string" }	-- exception message	
+			]	
+		}]
+	}
+}	
+
+
+touch
